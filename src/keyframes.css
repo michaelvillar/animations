@@ -1,39 +1,104 @@
-:root {
-  --bell-angle: 30;
+@keyframes bell {
+0% { transform: rotateZ(0deg) }
+1% { transform: rotateZ(10.87066255614392deg) }
+2% { transform: rotateZ(20.337414884605998deg) }
+3% { transform: rotateZ(27.733364534427082deg) }
+4% { transform: rotateZ(32.587288614542985deg) }
+5% { transform: rotateZ(34.65039918780072deg) }
+6% { transform: rotateZ(33.90438453630051deg) }
+7% { transform: rotateZ(30.551056039956773deg) }
+8% { transform: rotateZ(24.985348808617275deg) }
+9% { transform: rotateZ(17.75463369634427deg) }
+10% { transform: rotateZ(9.508215211536847deg) }
+11% { transform: rotateZ(0.9414575347200491deg) }
+12% { transform: rotateZ(-7.260827078209038deg) }
+13% { transform: rotateZ(-14.47727257970847deg) }
+14% { transform: rotateZ(-20.195198959238855deg) }
+15% { transform: rotateZ(-24.045058993670473deg) }
+16% { transform: rotateZ(-25.82195589162747deg) }
+17% { transform: rotateZ(-25.4932138140705deg) }
+18% { transform: rotateZ(-23.192123543601618deg) }
+19% { transform: rotateZ(-19.199058033085844deg) }
+20% { transform: rotateZ(-13.912076977336644deg) }
+21% { transform: rotateZ(-7.809851358870813deg) }
+22% { transform: rotateZ(-1.4101934484651848deg) }
+23% { transform: rotateZ(4.77234732003928deg) }
+24% { transform: rotateZ(10.266466190778791deg) }
+25% { transform: rotateZ(14.678666815290937deg) }
+26% { transform: rotateZ(17.71998694714034deg) }
+27% { transform: rotateZ(19.223201461481885deg) }
+28% { transform: rotateZ(19.149647201674917deg) }
+29% { transform: rotateZ(17.58566766349289deg) }
+30% { transform: rotateZ(14.72948555985339deg) }
+31% { transform: rotateZ(10.870016883592681deg) }
+32% { transform: rotateZ(6.3596914887857245deg) }
+33% { transform: rotateZ(1.583707299506544deg) }
+34% { transform: rotateZ(-3.071700546111045deg) }
+35% { transform: rotateZ(-7.249449403473358deg) }
+36% { transform: rotateZ(-10.647980858404757deg) }
+37% { transform: rotateZ(-13.041951965870638deg) }
+38% { transform: rotateZ(-14.295921906363578deg) }
+39% { transform: rotateZ(-14.370324207873049deg) }
+40% { transform: rotateZ(-13.319652901441177deg) }
+41% { transform: rotateZ(-11.283402161843208deg) }
+42% { transform: rotateZ(-8.47083682534301deg) }
+43% { transform: rotateZ(-5.14109745710001deg) }
+44% { transform: rotateZ(-1.5804308032629462deg) }
+45% { transform: rotateZ(1.9215307875710221deg) }
+46% { transform: rotateZ(5.094541516489082deg) }
+47% { transform: rotateZ(7.7078375056965776deg) }
+48% { transform: rotateZ(9.58612424888091deg) }
+49% { transform: rotateZ(10.620418687783085deg) }
+50% { transform: rotateZ(10.773162973716172deg) }
+51% { transform: rotateZ(10.07750373467857deg) }
+52% { transform: rotateZ(8.631091343416786deg) }
+53% { transform: rotateZ(6.585163146716164deg) }
+54% { transform: rotateZ(4.130003539942487deg) }
+55% { transform: rotateZ(1.47810060582389deg) }
+56% { transform: rotateZ(-1.1535686977854958deg) }
+57% { transform: rotateZ(-3.5606980228433818deg) }
+58% { transform: rotateZ(-5.566945277639455deg) }
+59% { transform: rotateZ(-7.036262502369334deg) }
+60% { transform: rotateZ(-7.881451420971105deg) }
+61% { transform: rotateZ(-8.068470050165251deg) }
+62% { transform: rotateZ(-7.6163715404642485deg) }
+63% { transform: rotateZ(-6.5931033011437deg) }
+64% { transform: rotateZ(-5.1077058118913214deg) }
+65% { transform: rotateZ(-3.299703870493115deg) }
+66% { transform: rotateZ(-1.3266615658161751deg) }
+67% { transform: rotateZ(0.6490341082740071deg) }
+68% { transform: rotateZ(2.473090334158972deg) }
+69% { transform: rotateZ(4.010933669020741deg) }
+70% { transform: rotateZ(5.157202324797225deg) }
+71% { transform: rotateZ(5.842473912100883deg) }
+72% { transform: rotateZ(6.036845026745716deg) }
+73% { transform: rotateZ(5.75024430881618deg) }
+74% { transform: rotateZ(5.029621531907681deg) }
+75% { transform: rotateZ(3.953391745950223deg) }
+76% { transform: rotateZ(2.6237083007181905deg) }
+77% { transform: rotateZ(1.1572786485897684deg) }
+78% { transform: rotateZ(-0.3244859670713262deg) }
+79% { transform: rotateZ(-1.7051842980710958deg) }
+80% { transform: rotateZ(-2.88225139576408deg) }
+81% { transform: rotateZ(-3.7742541135168706deg) }
+82% { transform: rotateZ(-4.326164817140267deg) }
+83% { transform: rotateZ(-4.51230516647754deg) }
+84% { transform: rotateZ(-4.336849380117539deg) }
+85% { transform: rotateZ(-3.8319724741336074deg) }
+86% { transform: rotateZ(-3.05390835056137deg) }
+87% { transform: rotateZ(-2.0773321586043973deg) }
+88% { transform: rotateZ(-0.9885909178948051deg) }
+89% { transform: rotateZ(0.12163052674998895deg) }
+90% { transform: rotateZ(1.1656071013092155deg) }
+91% { transform: rotateZ(2.065267104624571deg) }
+92% { transform: rotateZ(2.7577904124350843deg) }
+93% { transform: rotateZ(3.199730470189218deg) }
+94% { transform: rotateZ(3.3694139125952143deg) }
+95% { transform: rotateZ(3.267518622899231deg) }
+96% { transform: rotateZ(2.91587824580041deg) }
+97% { transform: rotateZ(2.3546970975625574deg) }
+98% { transform: rotateZ(1.6384740452946085deg) }
+99% { transform: rotateZ(0.8310193993796deg) }
+100% { transform: rotateZ(3.1979044704691763e-15deg) }
 }
 
-@keyframes bell {
-  0% {
-    transform: rotateZ(0);
-  }
-  12% {
-    transform: rotateZ(calc(var(--bell-angle) / -1deg));
-  }
-  24% {
-    transform: rotateZ(calc(var(--bell-angle) / 1deg));
-  }
-  36% {
-    transform: rotateZ(calc(var(--bell-angle) / -3deg));
-  }
-  48% {
-    transform: rotateZ(calc(var(--bell-angle) / 4deg));
-  }
-  58% {
-    transform: rotateZ(calc(var(--bell-angle) / -5deg));
-  }
-  68% {
-    transform: rotateZ(calc(var(--bell-angle) / 6deg));
-  }
-  76% {
-    transform: rotateZ(calc(var(--bell-angle) / -7deg));
-  }
-  84% {
-    transform: rotateZ(calc(var(--bell-angle) / 8deg));
-  }
-  92% {
-    transform: rotateZ(calc(var(--bell-angle) / -9deg));
-  }
-  100% {
-    transform: rotateZ(0);
-  }
-}

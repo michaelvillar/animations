@@ -2,5 +2,5 @@
   extend: .Animatable;
   transform-origin: 50% 5%;
   animation: bell 1000ms;
-  animation-timing-function: ease-out-cubic;
+  animation-timing-function: linear;
 }
